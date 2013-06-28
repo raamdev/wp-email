@@ -27,25 +27,11 @@ add_filter('the_title', 'email_title');
 	<meta name="robots" content="noindex, nofollow" />
 	<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; <?php _e('Blog Archive', 'wp-email'); ?> <?php } ?> <?php wp_title(); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-	<script type="text/javascript">
-	/* <![CDATA[*/
-		function repositionPopup() {
-			var content = document.getElementById("wp-email-popup");
-			var newWidth = content.offsetWidth + 30;
-			var newHeight = content.offsetHeight + 50;
-			if (/Firefox/.test(navigator.userAgent)) // Firefox doesn't hide location & status bars
-			  newHeight += 50;
-			window.resizeTo(newWidth, newHeight);
-			window.moveTo((screen.width-newWidth) / 2, (screen.height-newHeight) / 2);
-		}
-	/* ]]> */
-	</script>
 	<?php wp_head(); ?>
 </head>
-<body onload="repositionPopup();">
+<body class="wp-email">
 	<div id="wp-email-popup">
 		<?php email_form(true); ?>
-		<p style="text-align: center; padding-top: 20px;"><a href="#" onclick="window.close();"><?php _e('Close This Window', 'wp-email'); ?></a></p>
 		<?php wp_footer(); ?>
 	</div>
 </body>
