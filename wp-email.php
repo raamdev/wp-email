@@ -1,6 +1,6 @@
 <?php
 /*
- Plugin Name: WP-EMail
+ Plugin Name: - [Modified by Raam Dev] WP-EMail
  Plugin URI: http://lesterchan.net/portfolio/programming/php/
  Description: Allows people to recommand/send your WordPress blog's post/page to a friend.
  Version: 2.61
