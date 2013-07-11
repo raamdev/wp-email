@@ -29,7 +29,7 @@ add_filter('the_title', 'email_title');
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel='stylesheet' id='wp-email-css'  href='<?php bloginfo('stylesheet_directory'); ?>/email-css.css?ver=2.60' type='text/css' media='all' />
 	<script type='text/javascript' src='<?php bloginfo('wpurl'); ?>/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
-	<?php wp_head(); ?>
+	<?php// wp_head(); ?>
 </head>
 <body class="wp-email">
 	<div id="wp-email-popup">
